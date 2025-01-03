@@ -8,7 +8,6 @@ const server = https.createServer(app);
 const wss = new WebSocket.Server({ noServer: true });
 
 app.get('/', (req, res) => {
-	console.log(wss.clients);
 	res.send(`${wss.clients.size} client connecting`);
 });
 
