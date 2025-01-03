@@ -1,4 +1,4 @@
-const https = require('node:https');
+const https = require('node:http');
 const url = require('node:url');
 const express = require('express');
 const WebSocket = require('ws');
